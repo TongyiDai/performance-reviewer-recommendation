@@ -17,7 +17,7 @@ Accept requests such as:
 
 > 给张三推荐本周期 10 位 360 环评人，并说明每个人的推荐原因。
 
-Resolve the employee, review period, requested count, and role mix. Use the current or most recent review period only when Lark evidence can establish it; otherwise ask for the period. Default to ten candidates when count is omitted. Include manager, peer, and cross-functional perspectives when the request does not specify a mix; include direct reports when the employee is a manager and the review design calls for downward feedback.
+Resolve the employee, review period, requested count, and role mix. Use an explicit review cycle or date range when provided. If the current cycle cannot be established from authorized Lark evidence, use a disclosed six-month observation window for a direct recommendation request; ask for the period only when it would materially change the candidate pool or the user requests a formal-cycle result. Default to ten candidates when count is omitted. Include manager, peer, and cross-functional perspectives when the request does not specify a mix; include direct reports when the employee is a manager and the review design calls for downward feedback.
 
 Ask one concise clarification when an ambiguity would materially change the candidate pool. Do not delay the task for preferences that can be reported as assumptions.
 
@@ -52,6 +52,8 @@ Prefer primary evidence in this order:
 ## Candidate rules
 
 Exclude or flag the employee, duplicate identities, inactive or departed users, people outside the permitted population, policy-defined conflicts, and anyone without substantive evidence in the period.
+
+Treat cross-tenant collaborators as eligibility-flagged candidates even when their direct evidence is strong. Confirm that the target review system accepts them before placing them in the submit-ready shortlist.
 
 Do not use message volume, meeting count, attendance, reactions, leave, compensation, health, age, gender, ethnicity, disability, private relationships, or inferred personality as positive evidence.
 
