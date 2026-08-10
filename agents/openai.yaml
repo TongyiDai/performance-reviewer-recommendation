@@ -1,4 +1,4 @@
 interface:
   display_name: "绩效环评人推荐"
   short_description: "基于飞书 Lark CLI 协作证据生成可追溯环评人候选"
-  default_prompt: "使用 $performance-reviewer-recommendation，基于授权的飞书 Lark CLI 协作证据生成环评人候选，并保留证据边界。"
+  default_prompt: "使用 $performance-reviewer-recommendation，先验证可用的用户身份和授权 Lark 数据路径，默认推荐 10 位 360 环评人，按推荐度排序并保留共同工作证据、限制、数据缺口和人工确认边界。"
