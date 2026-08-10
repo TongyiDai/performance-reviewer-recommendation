@@ -1,0 +1,11 @@
+{
+  "schema_version": "reviewer-recommendation.v1",
+  "status": "ready",
+  "request": {},
+  "coverage": {},
+  "recommendations": [],
+  "excluded_candidates": [],
+  "data_gaps": [],
+  "audit": {},
+  "human_review_required": false
+}

@@ -1,0 +1,16 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "可读证据经过资格校验才进入名单", "composition": "tension-contrast", "focus_node": "gate"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "readable", "type": "plane", "label": "证据可读", "importance": 2},
+    {"id": "gate", "type": "cube", "label": "资格校验", "importance": 5},
+    {"id": "eligible", "type": "plane", "label": "可进入名单", "importance": 3},
+    {"id": "blocked", "type": "frame", "label": "保留边界", "importance": 2}
+  ],
+  "edges": [
+    {"from": "readable", "to": "gate", "relation": "检查"},
+    {"from": "gate", "to": "eligible", "relation": "通过"},
+    {"from": "gate", "to": "blocked", "relation": "标记"}
+  ]
+}

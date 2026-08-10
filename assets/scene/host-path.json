@@ -1,0 +1,16 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "宿主负责推理，Lark CLI 负责取证", "composition": "layered-architecture", "focus_node": "reasoning"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "host", "type": "plane", "label": "宿主 Agent", "importance": 3},
+    {"id": "reasoning", "type": "cube", "label": "推理与表达", "importance": 5},
+    {"id": "lark", "type": "plane", "label": "Lark CLI", "importance": 3},
+    {"id": "sources", "type": "frame", "label": "授权证据", "importance": 2}
+  ],
+  "edges": [
+    {"from": "host", "to": "reasoning", "relation": "承载"},
+    {"from": "lark", "to": "sources", "relation": "读取"},
+    {"from": "sources", "to": "reasoning", "relation": "提供"}
+  ]
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">可读证据经过资格校验才进入名单</title>
+  <desc id="desc">证据可读、身份合规和共同工作事实共同决定推荐资格；资格不明时保留边界。</desc>
+  <rect width="1200" height="675" fill="#fff"/>
+  <text x="96" y="94" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="30" font-weight="600" fill="#111">可读证据，经过资格校验才进入名单</text>
+  <line x1="96" y1="124" x2="1104" y2="124" stroke="#e8e8e8"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+    <rect x="96" y="242" width="244" height="116" fill="#f5f5f5" stroke="#666"/>
+    <text x="218" y="292" text-anchor="middle" font-size="25" font-weight="600" fill="#111">证据可读</text>
+    <text x="218" y="328" text-anchor="middle" font-size="16" fill="#666">有共同工作事实</text>
+    <line x1="340" y1="300" x2="494" y2="300" stroke="#111" stroke-width="1.5"/>
+    <path d="M494 300 l-14 -8 M494 300 l-14 8" fill="none" stroke="#111" stroke-width="1.5"/>
+    <rect x="494" y="218" width="240" height="164" fill="#fff" stroke="#111" stroke-width="1.5"/>
+    <circle cx="734" cy="218" r="8" fill="#2f6bff"/>
+    <text x="614" y="286" text-anchor="middle" font-size="25" font-weight="600" fill="#111">资格校验</text>
+    <text x="614" y="324" text-anchor="middle" font-size="16" fill="#666">身份 · 租户 · 规则</text>
+    <line x1="734" y1="300" x2="898" y2="300" stroke="#2f6bff" stroke-width="1.5"/>
+    <path d="M898 300 l-14 -8 M898 300 l-14 8" fill="none" stroke="#2f6bff" stroke-width="1.5"/>
+    <rect x="898" y="242" width="206" height="116" fill="#2f6bff"/>
+    <text x="1001" y="292" text-anchor="middle" font-size="25" font-weight="600" fill="#fff">进入名单</text>
+    <text x="1001" y="328" text-anchor="middle" font-size="16" fill="#fff">可人工确认</text>
+    <line x1="614" y1="382" x2="614" y2="492" stroke="#999" stroke-dasharray="5 7"/>
+    <rect x="494" y="492" width="240" height="62" fill="#fff" stroke="#999"/>
+    <text x="614" y="531" text-anchor="middle" font-size="20" fill="#666">资格不明 → 保留边界</text>
+  </g>
+</svg>

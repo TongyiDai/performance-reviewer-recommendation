@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+tmp/
+raw/
+processed/
+output/
+*.jsonl
+*.log
+notes/
+minutes/
+secrets/
+credentials/
+

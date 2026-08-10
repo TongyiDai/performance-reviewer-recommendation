@@ -1,0 +1,30 @@
+{
+  "schema_version": "reviewer-recommendation.v1",
+  "status": "ready",
+  "request": {},
+  "coverage": {},
+  "recommendations": [
+    {
+      "candidate_ref": "C01",
+      "role": "peer",
+      "score": 50,
+      "confidence": "low",
+      "observed_dimensions": ["协作"],
+      "reason": "待复核。",
+      "evidence_refs": ["invented:1"],
+      "counter_evidence": [],
+      "risks": ["证据不足"],
+      "next_action": "请人工复核。"
+    }
+  ],
+  "excluded_candidates": [],
+  "data_gaps": [],
+  "audit": {
+    "run_id": "run_fixture_02",
+    "source_manifest": ["manifest_02"],
+    "evidence_refs": ["meeting:m02"],
+    "scoring_version": "provisional-2026-01",
+    "model_backend": {"host": "fixture", "model": "fixture-model", "validated": true}
+  },
+  "human_review_required": true
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "reviewer-recommendation.v1",
+  "status": "ready",
+  "request": {"employee_ref": "E01", "cycle": "2026H1", "requested_count": 1},
+  "coverage": {"complete": true, "sources": ["meeting", "task"]},
+  "recommendations": [
+    {
+      "candidate_ref": "C01",
+      "role": "cross_functional",
+      "score": 78,
+      "confidence": "medium",
+      "observed_dimensions": ["delivery", "协作"],
+      "reason": "在共同交付和后续决策中有直接观察。",
+      "evidence_refs": ["meeting:m01", "task:t01"],
+      "counter_evidence": [],
+      "risks": ["未覆盖全部目标维度"],
+      "next_action": "请 HR 确认是否纳入环评人候选。"
+    }
+  ],
+  "excluded_candidates": [],
+  "data_gaps": [],
+  "audit": {
+    "run_id": "run_fixture_01",
+    "source_manifest": ["manifest_01"],
+    "evidence_refs": ["meeting:m01", "task:t01"],
+    "scoring_version": "provisional-2026-01",
+    "model_backend": {"host": "fixture", "model": "fixture-model", "validated": true}
+  },
+  "human_review_required": true
+}

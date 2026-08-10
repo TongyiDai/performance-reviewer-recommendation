@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "reviewer-recommendation-evidence-v1",
+  "type": "object",
+  "required": ["run_id", "employee_alias", "candidate_alias", "source_type", "source_ref", "observed_at", "relationship_role", "observed_dimension", "fact", "evidence_strength", "visibility"],
+  "properties": {
+    "run_id": {"type": "string", "minLength": 1},
+    "employee_alias": {"type": "string", "minLength": 1},
+    "candidate_alias": {"type": "string", "minLength": 1},
+    "source_type": {"type": "string", "enum": ["contact", "meeting", "transcript", "im", "task", "document", "okr", "project", "approval", "feedback", "calendar", "mail", "base"]},
+    "source_ref": {"type": "string", "minLength": 1},
+    "observed_at": {"type": "string", "format": "date"},
+    "relationship_role": {"type": "string", "enum": ["manager", "peer", "cross_functional", "direct_report", "project_owner", "customer_partner"]},
+    "observed_dimension": {"type": "string", "minLength": 1},
+    "fact": {"type": "string", "minLength": 1},
+    "attribution": {"type": "string", "enum": ["candidate", "employee", "joint", "unknown"]},
+    "evidence_strength": {"type": "string", "enum": ["high", "medium", "low"]},
+    "source_reliability": {"type": "string", "enum": ["primary", "derived", "administrative"]},
+    "visibility": {"type": "string", "enum": ["authorized", "restricted", "unknown"]},
+    "counter_signal": {"type": "boolean"}
+  }
+}

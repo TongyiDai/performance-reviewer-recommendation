@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">宿主负责推理，Lark CLI 负责取证</title>
+  <desc id="desc">宿主 Agent 承载推理与表达，Lark CLI 从授权来源读取证据。</desc>
+  <rect width="1200" height="675" fill="#fff"/>
+  <text x="96" y="94" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="30" font-weight="600" fill="#111">宿主负责推理，Lark CLI 负责取证</text>
+  <line x1="96" y1="124" x2="1104" y2="124" stroke="#e8e8e8"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+    <rect x="96" y="208" width="1008" height="160" fill="#f5f5f5" stroke="#999"/>
+    <text x="128" y="252" font-size="18" fill="#666">宿主 Agent</text>
+    <rect x="128" y="274" width="360" height="62" fill="#fff" stroke="#111"/>
+    <text x="308" y="314" text-anchor="middle" font-size="24" font-weight="600" fill="#111">推理与表达</text>
+    <circle cx="488" cy="274" r="7" fill="#2f6bff"/>
+    <line x1="488" y1="305" x2="716" y2="305" stroke="#2f6bff" stroke-width="1.5"/>
+    <path d="M716 305 l-14 -8 M716 305 l-14 8" fill="none" stroke="#2f6bff" stroke-width="1.5"/>
+    <rect x="716" y="274" width="356" height="62" fill="#fff" stroke="#666"/>
+    <text x="894" y="314" text-anchor="middle" font-size="24" font-weight="600" fill="#111">推荐结果</text>
+    <rect x="96" y="456" width="360" height="82" fill="#fff" stroke="#111"/>
+    <text x="276" y="506" text-anchor="middle" font-size="24" font-weight="600" fill="#111">Lark CLI</text>
+    <line x1="456" y1="497" x2="716" y2="497" stroke="#111" stroke-width="1.5"/>
+    <path d="M716 497 l-14 -8 M716 497 l-14 8" fill="none" stroke="#111" stroke-width="1.5"/>
+    <rect x="716" y="456" width="388" height="82" fill="#f5f5f5" stroke="#999"/>
+    <text x="910" y="506" text-anchor="middle" font-size="24" font-weight="600" fill="#111">授权工作证据</text>
+    <line x1="276" y1="456" x2="276" y2="368" stroke="#999" stroke-dasharray="5 7"/>
+  </g>
+</svg>

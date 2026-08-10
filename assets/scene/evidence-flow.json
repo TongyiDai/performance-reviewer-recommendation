@@ -1,0 +1,14 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "共同工作证据经过筛选才形成推荐", "composition": "input-process-output", "focus_node": "recommendation"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "evidence", "type": "plane", "label": "共同工作", "importance": 2},
+    {"id": "edge", "type": "line", "label": "证据边", "importance": 3},
+    {"id": "recommendation", "type": "cube", "label": "可审阅推荐", "importance": 5}
+  ],
+  "edges": [
+    {"from": "evidence", "to": "edge", "relation": "抽取"},
+    {"from": "edge", "to": "recommendation", "relation": "排序"}
+  ]
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">共同工作证据经过筛选才形成推荐</title>
+  <desc id="desc">共同工作证据被抽取为证据边，再排序形成可审阅推荐。</desc>
+  <rect width="1200" height="675" fill="#fff"/>
+  <text x="96" y="94" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="30" font-weight="600" fill="#111">共同工作证据，经过筛选才形成推荐</text>
+  <line x1="96" y1="124" x2="1104" y2="124" stroke="#e8e8e8"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+    <rect x="96" y="248" width="244" height="132" fill="#f5f5f5" stroke="#666"/>
+    <text x="218" y="304" text-anchor="middle" font-size="25" font-weight="600" fill="#111">共同工作</text>
+    <text x="218" y="344" text-anchor="middle" font-size="16" fill="#666">会议 · 消息 · 文档</text>
+    <line x1="340" y1="314" x2="518" y2="314" stroke="#111" stroke-width="1.5"/>
+    <path d="M518 314 l-14 -8 M518 314 l-14 8" fill="none" stroke="#111" stroke-width="1.5"/>
+    <rect x="518" y="248" width="244" height="132" fill="#fff" stroke="#111" stroke-width="1.5"/>
+    <circle cx="762" cy="248" r="7" fill="#2f6bff"/>
+    <text x="640" y="304" text-anchor="middle" font-size="25" font-weight="600" fill="#111">证据边</text>
+    <text x="640" y="344" text-anchor="middle" font-size="16" fill="#666">谁 · 做了什么 · 何时</text>
+    <line x1="762" y1="314" x2="940" y2="314" stroke="#2f6bff" stroke-width="1.5"/>
+    <path d="M940 314 l-14 -8 M940 314 l-14 8" fill="none" stroke="#2f6bff" stroke-width="1.5"/>
+    <rect x="940" y="248" width="164" height="132" fill="#2f6bff"/>
+    <text x="1022" y="304" text-anchor="middle" font-size="25" font-weight="600" fill="#fff">可审阅</text>
+    <text x="1022" y="344" text-anchor="middle" font-size="20" fill="#fff">推荐</text>
+  </g>
+</svg>

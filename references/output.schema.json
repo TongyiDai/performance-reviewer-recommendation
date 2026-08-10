@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "reviewer-recommendation-output-v1",
+  "type": "object",
+  "required": ["schema_version", "status", "request", "coverage", "recommendations", "excluded_candidates", "data_gaps", "audit", "human_review_required"],
+  "properties": {
+    "schema_version": {"const": "reviewer-recommendation.v1"},
+    "status": {"enum": ["ready", "insufficient_evidence", "blocked"]},
+    "request": {"type": "object"},
+    "coverage": {"type": "object"},
+    "recommendations": {"type": "array"},
+    "excluded_candidates": {"type": "array"},
+    "data_gaps": {"type": "array"},
+    "audit": {
+      "type": "object",
+      "required": ["run_id", "source_manifest", "evidence_refs", "scoring_version", "model_backend"]
+    },
+    "human_review_required": {"const": true}
+  }
+}
