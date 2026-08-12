@@ -15,7 +15,7 @@ Use capability discovery at runtime. Domain names and readable fields depend on 
 
 ## Retrieval discipline
 
-1. Use `lark-cli auth status --json --verify` before every new run.
+1. Prefer `lark-cli auth status --json --verify` before every new run. When the current CLI build does not expose `auth`, fall back to `contact +get-user --as user` and, if needed, `task +get-my-tasks --as user` as a read-only compatibility probe.
 2. Keep company and personal profiles separate.
 3. Prefer user identity for personal or collaboration evidence.
 4. Use shortcuts before raw API calls.
@@ -28,4 +28,3 @@ Use capability discovery at runtime. Domain names and readable fields depend on 
 - `high`: primary, attributable, substantive, and inside the observation period.
 - `medium`: primary with partial context, or derived material corroborated by primary evidence.
 - `low`: administrative or indirect; useful for coverage diagnostics and insufficient on its own.
-
