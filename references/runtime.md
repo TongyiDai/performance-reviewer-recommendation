@@ -23,7 +23,14 @@ lark-cli --help
 lark-cli auth status --json --verify
 ```
 
-Continue only when the intended tenant is active and the result reports `identity: user` and `verified: true`. Missing CLI, failed verification, bot-only identity, or an unavailable required scope is a stop condition.
+When `auth status --json --verify` is supported, continue only when the intended tenant is active and the result reports `identity: user` and `verified: true`. When the current CLI build does not expose `auth`, fall back to:
+
+```bash
+lark-cli contact +get-user --as user --json
+lark-cli task +get-my-tasks --as user --json
+```
+
+`contact` resolves the current user; `task` only proves read-capable user-context. Missing CLI, failed verification, bot-only identity, or an unavailable required scope is a stop condition.
 
 For Doubao Enterprise, use the built-in enterprise Lark capability or an approved Lark CLI bridge. Do not ask for a local CLI when the built-in capability is available.
 

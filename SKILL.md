@@ -27,7 +27,7 @@ Read [host-bootstrap.md](references/host-bootstrap.md) before any Feishu retriev
 
 - **Doubao Enterprise**: use its built-in Lark tool or approved Lark CLI bridge. If neither is available, stop with `blocked`.
 - **Codex / Claude Code**: require local `lark-cli`. If it is missing, tell the user to install or enable it, then stop.
-- Verify the intended tenant, profile, and user identity with `lark-cli auth status --json --verify`. Require `identity: user` and `verified: true` for personal or collaboration evidence.
+- Prefer `lark-cli auth status --json --verify` to verify the intended tenant, profile, and user identity. When the current CLI build does not expose the `auth` subcommand, fall back to `contact +get-user --as user` and, if needed, `task +get-my-tasks --as user` as a read-only compatibility probe. Treat `contact` as resolved current user, treat `task` as user-context only, and do not turn compatibility mode into a write-capable or subject-binding claim.
 - Never silently use a bot identity, a different Feishu profile, browser search, or manually guessed records as a substitute.
 
 Record the host, Lark profile, identity type, token status, scopes, and check time without recording credentials.
