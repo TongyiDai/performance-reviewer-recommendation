@@ -102,10 +102,11 @@ assets/scene/                    画板的结构化 Scene JSON
 ## 校验
 
 ```bash
-python3 /path/to/skill-creator/scripts/quick_validate.py .
 bash scripts/doctor.sh
 python3 scripts/validate_output.py tests/fixtures/valid-result.json
 python3 scripts/validate_output.py tests/fixtures/invalid-no-human-review.json
+# 可选：若本机已安装 skill-creator 工具，可额外校验 SKILL.md frontmatter
+# python3 "$SKILL_CREATOR/scripts/quick_validate.py" .
 ```
 
 当前仓库包含结构校验、JSON 输出校验和脱敏测试夹具。它提供推荐草稿，不替代组织的绩效政策、资格规则或人工确认。
