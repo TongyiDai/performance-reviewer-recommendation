@@ -15,6 +15,8 @@ Performance Reviewer Recommendation
 
 最快的使用方式：把这个 Skill 安装到宿主 Agent，然后提出“给我推荐 10 位 360 环评人”。宿主负责理解和表达，飞书 / Lark 负责提供可核验的工作证据。
 
+完整规则与运行边界见 [`SKILL.md`](SKILL.md) 和 [`AGENT-GUIDE.md`](AGENT-GUIDE.md)。
+
 ## Agent 使用契约（运行前必读）
 
 这一段给 Agent 读，后面的 `SKILL.md` 是完整规则，`references/runtime.md` 是扩展运行契约。
