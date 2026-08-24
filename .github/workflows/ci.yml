@@ -4,15 +4,20 @@ on:
   pull_request:
   workflow_dispatch:
 jobs:
-  tests:
-    name: Tests (Python ${{ matrix.python-version }})
+  contract:
+    name: Output contract (Python ${{ matrix.python-version }})
     runs-on: ubuntu-latest
     strategy: {fail-fast: false, matrix: {python-version: ["3.9", "3.12"]}}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "${{ matrix.python-version }}"}
-      - run: python -m unittest discover -s tests -v
+      - name: Valid fixture must pass
+        run: python scripts/validate_output.py tests/fixtures/valid-result.json
+      - name: Invalid fixtures must be rejected
+        run: |
+          ! python scripts/validate_output.py tests/fixtures/invalid-no-human-review.json
+          ! python scripts/validate_output.py tests/fixtures/invalid-unknown-evidence.json
   readiness:
     name: Skill release readiness
     runs-on: ubuntu-latest
